@@ -1,0 +1,27 @@
+@layer utilities {
+  .flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing, 0.25rem) * 4);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing, 0.25rem) * 3);
+  }
+  .text-white {
+    color: var(--color-white, #fff);
+  }
+  .hover\:bg-blue-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+      }
+    }
+  }
+}
